@@ -27,7 +27,8 @@ div.title {
     font-family: 'title';
     font-size: 180pt;
     width: 50%;
-    color: white;
+    color: yellow;
+    text-shadow: -10px -10px 0px red;
     font-weight: bolder;
     padding: 20px;
     background-color: blue;
