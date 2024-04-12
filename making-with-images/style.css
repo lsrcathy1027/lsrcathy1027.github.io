@@ -1,21 +1,25 @@
 body {
     background-color: black;
-    background-image: url("screen.png");
-    background-repeat: repeat-x;
+    background-repeat: repeat-y;
     background-size: contain;
+    background-image: url("gradient.png"),url("screen.png");
     background-attachment: fixed;
     background-position-x: center;
 }
 img {
     width: 100%;
 }
+div.item {
+    margin-top: 120px;
+    margin-left: auto;
+    width:5%;
+    transition: fixed;
+}
 div.box {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-left:auto;
     margin-right:auto;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 div.random {
     transition: 0.7s;
@@ -23,31 +27,29 @@ div.random {
 div.layout{
     display: flex;
     flex-wrap: wrap;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-left: 120px;
+    margin-top: 120px;
 }
 div.box.a {
-    width:10%;
+    width:10%;height: 10%;
 }s
 div.box.b {
-    width:15%;
+    width:13%;height: 13%;
 }
 div.box.c {
-    width:25%;
+    width:16%;height:16%;
 }
 div.box.one {
-    opacity:10%;
+    opacity:30%;
 }
 div.box.two {
-    opacity: 75%;
+    opacity: 65%;
 }
 div.box.three {
     opacity:100%
 }
 div.box.x {
-    filter: blur(4px);
+
 }
 div.box.y {
     filter: contrast(200%);
