@@ -1,0 +1,356 @@
+@font-face {
+    font-family:'Ouroboros';
+    src:url('Ouroboros-Regular.woff');}
+@font-face {
+    font-family:'subheading';
+    src:url('le-murmure.woff');}
+@font-face {
+    font-family:'body';
+    src:url('CirrusCumulus.woff');}
+/*reset project */
+body {
+    margin:0px;
+    background-image: url('background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+div.bigcontainer {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+div.tablecontents {
+    position:fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div.tablecontents a {
+    color:white;
+    text-decoration: none;
+}
+
+div.main {
+    overflow:scroll;
+  }
+div {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/* typography */
+
+div.hugetext {
+    font-size:7.6vw;
+    line-height: 10vw;
+}
+
+div.headingtext {
+    font-size: 3.5vw;
+    line-height: 3.2vw;
+    margin:5.25px;
+    padding-top: 10px;
+    padding-bottom: 3.5px;
+}
+
+div.mediumtext {
+    font-size: 1.8vw;
+    line-height: 1.9vw;
+}
+div.bodytext {
+    font-size: 1.5vw;
+    line-height: 1.6vw;
+    margin: 7px;
+    padding: 7px;
+}
+
+
+div.sans {
+    font-family: 'Ouroboros';
+}
+div.subheading {
+    font-family: 'subheading';
+}
+
+div.body {
+    font-family: 'body';
+    font-weight:bold;
+}
+
+/* typography */
+
+div.textwhite {
+    color: white;
+}
+div.textyellow {
+    color: yellow;
+}
+div.textgreen {
+    color:#00ff00;
+}
+div.textblue {
+    color:blue;
+}
+div.textlblue {
+    color:cyan;
+}
+div.textpink {
+    color:violet;
+}
+div.orangered{
+    color: orangered;
+}
+
+div.bgpink {
+    background-color: pink;
+}
+
+div.bgpurple {
+    background-color: darkmagenta;
+}
+div.bgblue {
+    background-color: blue;
+}
+
+/* layout */
+div.width150 {
+    width:150%
+}
+div.width100 {
+    width: 100%;
+}
+div.width85 {
+    width: 85%;
+}
+div.width80 {
+    width: 80%;
+}
+
+div.width75 {
+    width: 75%;
+}
+
+div.width66 {
+    width: 66.66%;
+}
+
+div.width60{
+    width: 60%;
+}
+div.width56{
+    width: 56%;
+}
+div.width50{
+    width: 50%;
+}
+div.width45{
+    width: 45%;
+}
+div.width40 {
+    width: 40%;
+}
+
+div.width33 {
+    width: 33.33%;
+}
+
+div.width25 {
+    width: 25%;
+}
+div.width20 {
+    width: 20%;
+}
+
+div.dashedborder {
+    border: dashed darkgray;
+}
+div.textcenter {
+    text-align:center;
+}
+div.textleft {
+    text-align:left;
+}
+div.textright {
+    text-align:right;
+}
+
+/* Cover */
+div.title {
+    margin-top:70px;
+}
+div.eyes {
+    margin-top: 1vw;
+    margin-left: -28vw;
+}
+div.cover {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5vw;
+}
+/* Intro */
+
+div.introheroimage{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.introheading{
+    box-sizing: border-box;
+    padding-top: 5VW;
+    margin-top: -5vw;
+}
+div.introtext {
+    background: linear-gradient(transparent 50%, violet);
+}
+
+/* Chapter 2 */
+div.c2heading{
+    box-sizing: border-box;
+    padding-top: 5VW;
+}
+div.c2text {
+    background: linear-gradient(transparent 50%, cyan);
+}
+div.c2text {
+    background: linear-gradient(transparent 50%, cyan);
+}
+
+/* Chapter 3 */
+    /* Chapter3.1 */
+    div.detection {
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    div.c31heading {
+        height: 20%;
+    }
+    div.c31text {
+        height:80%;
+        background: linear-gradient(transparent 60%, violet);
+    }
+    /* Chapter3.2 */
+    div.processing {
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    div.c32heading {
+        height: 20%;
+    }
+    div.c32text {
+        height:80%
+    }
+    div.c32img {
+        width:50%;
+    }
+
+    /* Chapter3.3 */
+
+    div.map {
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    div.c33heading {
+        height: 20%;
+    }
+    div.c33text {
+        height:80%
+    }
+
+/* Chapter 4*/
+div.bold{
+    font-weight:bold;
+}
+div.light{
+    font-weight:100;
+}
+
+div.bp1 {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+
+div.container {
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    align-items: center;
+}
+div.container1 {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+div.bp2 {
+    margin-bottom: 90px;
+    margin-top: 30px;
+}
+div.container3 {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div.bat1{
+    border: solid lawngreen;
+}
+
+div.battt2 img {
+    margin-bottom: 20px;
+}
+
+div.bp3 {
+    margin-bottom: 50px;
+    margin-top: 40px;
+
+}
+div.bp4 {
+    margin-bottom: 10px;
+    margin-top: 40px;
+    border-top:1px solid lightgrey;
+}
+
+div.center {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+div.marginright{
+    margin-right: 10%;
+}
+div.marginbottom {
+    margin-bottom: 50px;
+}
+div.image {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.overlay {
+    position:fixed;
+    width:100%;
+    top:0px;
+    left:0px;
+}
+
+div.small {
+    width: 40%;
+}
