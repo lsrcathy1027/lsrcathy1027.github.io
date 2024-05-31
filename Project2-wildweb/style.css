@@ -1,20 +1,26 @@
 @font-face {
-    font-family:'Ouroboros';
-    src:url('Ouroboros-Regular.woff');}
+    font-family:'Colr';
+    src:url('Colr.woff');}
+@font-face {
+    font-family:'Mess';
+    src:url('Mess.woff');}
 @font-face {
     font-family:'subheading';
-    src:url('le-murmure.woff');}
+    src:url('CirrusCumulus.woff');}
 @font-face {
     font-family:'body';
     src:url('CirrusCumulus.woff');}
 /*reset project */
 body {
-    margin:0px;
+    margin:0;
+    padding: 0;
     background-image: url('background.png');
-    background-size: cover;
+    background-size: cover, 100%;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    color: white;
+    background-color: black;
+    overflow-x: hidden;
+    
 }
 div.bigcontainer {
     display:flex;
@@ -38,21 +44,33 @@ div.c1 {
 }
 div.cc1:hover {
     background-color: violet;
+    transition: 0.4s;
+    font-size: 1.85vw;
+    line-height: 1.9vw;
 }
 div.c2 {
     border-right: 1px solid white;
 }
 div.cc2:hover {
     background-color: cyan;
+    transition: 0.4s;
+    font-size: 1.85vw;
+    line-height: 1.9vw;
 }
 div.c3 {
     border-right: 1px solid white;
 }
 div.cc3:hover {
     background-color: #00c000;
+    transition: 0.4s;
+    font-size: 1.85vw;
+    line-height: 1.9vw;
 }
 div.cc4:hover {
     background-color: orange;
+    transition: 0.4s;
+    font-size: 1.85vw;
+    line-height: 1.9vw;
 }
 div.tablecontents a {
     color:white;
@@ -61,6 +79,9 @@ div.tablecontents a {
 
 div.main {
     overflow:scroll;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
   }
 div {
     box-sizing: border-box;
@@ -69,17 +90,27 @@ div {
 img {
     width: 100%;
 }
-
+div.float {
+    top: 50%;
+    left: 50%;
+    z-index: 10px;
+    position: fixed;
+    width: 5%;
+}
 /* typography */
 
 div.hugetext {
-    font-size:7.6vw;
-    line-height: 10vw;
+    font-size:12vw;
+    line-height: 17vw;
+}
+div.hugetext2 {
+    font-size:8.0vw;
+    line-height: 17vw;
 }
 
 div.headingtext {
-    font-size: 3.5vw;
-    line-height: 3.2vw;
+    font-size: 2.5vw;
+    line-height: 2.8vw;
     margin:5.25px;
     padding-top: 10px;
     padding-bottom: 3.5px;
@@ -95,18 +126,24 @@ div.bodytext {
     margin: 7px;
     padding: 7px;
 }
-
+div.smalltext {
+    font-size: 1vw;
+    line-height: 1.2vw;
+}
 
 div.sans {
-    font-family: 'Ouroboros';
+    font-family: 'Colr';
+}
+div.sans2 {
+    font-family: 'Mess';
 }
 div.subheading {
     font-family: 'subheading';
 }
 
 div.body {
-    font-family: 'body';
-    font-weight:bold;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
 }
 
 /* typography */
@@ -216,12 +253,11 @@ div.textright {
 
 /* Cover */
 div.title {
-    margin-top:4.5vw;
     margin-left: 2vw;
 }
-div.eyes {
-    margin-top: 1vw;
-    margin-left: -29vw;
+div.title0 {
+    margin-top:4.5vw;
+    margin-left: 2vw;
 }
 div.cover {
     display: flex;
@@ -256,6 +292,9 @@ div.sonardiagram {
     margin-bottom: 2vw;
 }
 
+div.sonardiagram2 {
+    margin-bottom: 2vw;
+}
 /* Chapter 3 */
 div.c3heading {
     box-sizing: border-box;
@@ -272,15 +311,17 @@ div.c3text {
     margin-bottom: 2vw;
     height:25vw;
     overflow:scroll;
+    scrollbar-width: none;
 }
 div.c3text2 {
     margin-bottom: 2vw;
 }
 div.c3textbody2 {
     background: linear-gradient(transparent 50%, #00ff00);
-    height:25vw;
+    height:32vw;
     overflow:scroll;
     align-items: center;
+    scrollbar-width: none;
 }
 
 div.c3formula {
@@ -306,6 +347,13 @@ div.c4text {
 div.c4img {
     margin-bottom: 2vw;
 }
+/* Footnotes */
+div.footnotes {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid white;
+    margin-bottom: 1vw;
+}
 /* Others */
 div.bold{
     font-weight:bold;
@@ -313,8 +361,16 @@ div.bold{
 div.sonardiagram {
     border: 4px ridge cyan;
 }
+div.sonardiagram2 {
+    border: 4px ridge cyan;
+}
 div.bat1{
     border: 4px ridge violet;
+}
+div.c3img1 {
+    border: 4px ridge #00d000;
+    background-image: url('detect2.png'); /* Initial background image */
+    background-size: cover;
 }
 div.c3img {
     border: 4px ridge #00d000;
@@ -331,5 +387,14 @@ div.marginbottom {
     margin-bottom: 50px;
 }
 
+span.word {
+    border:0.5rem outset blue;
+  }
 
+div.hover:hover{
+    filter: invert(100%);
+}
 
+div.hover1:hover{
+    content:url('detect2.png');
+}
