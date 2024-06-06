@@ -101,14 +101,14 @@ div.float {
     margin-top: -50px;
 }
 div.float1 {
-    bottom: 15%;
-    right: 10%;
+    bottom: 0%;
+    left: 22%;
     z-index: 10;
     position: fixed;
-    margin-right: 10px;
-    margin-top: -50px;
+    margin-right: 40px;
+    margin-bottom: 5px;
     color: blue;
-    font-size: 8vw;
+    font-size: 4vw;
 }
 div.float2 {
     top: 15%;
@@ -116,6 +116,15 @@ div.float2 {
     z-index: 10;
     position: fixed;
     width: 70px;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+div.float3 {
+    bottom: 25%;
+    right: 2%;
+    z-index: 10;
+    position: fixed;
+    width: 200px;
     margin-left: -50px;
     margin-top: -50px;
 }
