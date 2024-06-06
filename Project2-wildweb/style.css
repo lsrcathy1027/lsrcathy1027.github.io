@@ -6,22 +6,24 @@
     src:url('Mess.woff');}
 @font-face {
     font-family:'subheading';
-    src:url('CirrusCumulus.woff');}
+    src:url('Colr.woff');}
 @font-face {
     font-family:'body';
     src:url('CirrusCumulus.woff');}
+@font-face {
+    font-family:'brush';
+    src:url('bianzhidai_noBG-Brush.woff');}
 /*reset project */
 body {
     margin:0;
     padding: 0;
-    background-image: url('background.png');
     background-size: cover, 100%;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-color: black;
     overflow-x: hidden;
-    
 }
+
 div.bigcontainer {
     display:flex;
     flex-wrap: wrap;
@@ -30,7 +32,6 @@ div.bigcontainer {
 div.tablecontents {
     position:fixed;
     width: 100%;
-    height: 2.2vw;
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
@@ -41,36 +42,36 @@ div.tablecontents {
 }
 div.c1 {
     border-right: 1px solid white;
+    padding: 10px;
 }
 div.cc1:hover {
     background-color: violet;
     transition: 0.4s;
-    font-size: 1.85vw;
-    line-height: 1.9vw;
 }
 div.c2 {
     border-right: 1px solid white;
+    padding: 10px;
 }
 div.cc2:hover {
-    background-color: cyan;
+    background-color: rgb(0, 210, 210);
     transition: 0.4s;
-    font-size: 1.85vw;
-    line-height: 1.9vw;
 }
 div.c3 {
     border-right: 1px solid white;
+    padding: 10px;
 }
 div.cc3:hover {
     background-color: #00c000;
     transition: 0.4s;
-    font-size: 1.85vw;
-    line-height: 1.9vw;
 }
+
+div.c4 {
+    padding: 10px;
+}
+
 div.cc4:hover {
     background-color: orange;
     transition: 0.4s;
-    font-size: 1.85vw;
-    line-height: 1.9vw;
 }
 div.tablecontents a {
     color:white;
@@ -93,18 +94,39 @@ img {
 div.float {
     top: 50%;
     left: 50%;
-    z-index: 10px;
+    z-index: 10;
     position: fixed;
-    width: 5%;
+    width: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+div.float1 {
+    bottom: 15%;
+    right: 10%;
+    z-index: 10;
+    position: fixed;
+    margin-right: 10px;
+    margin-top: -50px;
+    color: blue;
+    font-size: 8vw;
+}
+div.float2 {
+    top: 15%;
+    left: 12%;
+    z-index: 10;
+    position: fixed;
+    width: 70px;
+    margin-left: -50px;
+    margin-top: -50px;
 }
 /* typography */
 
 div.hugetext {
     font-size:12vw;
-    line-height: 17vw;
+    line-height: 12vw;
 }
 div.hugetext2 {
-    font-size:8.0vw;
+    font-size:7.7vw;
     line-height: 17vw;
 }
 
@@ -117,8 +139,8 @@ div.headingtext {
 }
 
 div.mediumtext {
-    font-size: 1.8vw;
-    line-height: 1.9vw;
+    font-size: 1.2vw;
+    line-height: 1.3vw;
 }
 div.bodytext {
     font-size: 1.5vw;
@@ -137,8 +159,12 @@ div.sans {
 div.sans2 {
     font-family: 'Mess';
 }
+div.brush {
+    font-family: 'brush';
+}
 div.subheading {
     font-family: 'subheading';
+    border-radius: 0%;
 }
 
 div.body {
@@ -253,16 +279,19 @@ div.textright {
 
 /* Cover */
 div.title {
+    margin-top:4.5vw;
     margin-left: 2vw;
 }
 div.title0 {
     margin-top:4.5vw;
     margin-left: 2vw;
 }
+
 div.cover {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 5vw;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
 }
 /* Intro */
 div.introheroimage{
@@ -272,7 +301,7 @@ div.introheroimage{
 div.introheading{
     box-sizing: border-box;
     padding-top: 5VW;
-    margin-top: -5vw;
+    margin-bottom: 15vh;
 }
 div.introtext {
     background: linear-gradient(transparent 50%, rgb(211, 115, 211));
@@ -281,8 +310,8 @@ div.introtext {
 /* Chapter 2 */
 div.c2heading{
     box-sizing: border-box;
-    padding-top: 5VW;
-    margin-top:-2vw
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
 div.c2text {
     background: linear-gradient(transparent 50%, rgb(0, 225, 225));
@@ -298,8 +327,8 @@ div.sonardiagram2 {
 /* Chapter 3 */
 div.c3heading {
     box-sizing: border-box;
-    padding-top: 5VW;
-    margin-top:-2vw
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
 div.chapter3body {
     display: flex;
@@ -323,22 +352,31 @@ div.c3textbody2 {
     align-items: center;
     scrollbar-width: none;
 }
-
 div.c3formula {
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     line-height: 1.5vw;
-    border-left: 2px solid #00ff00;
-    border-right: 2px solid #00ff00;
-    border-top: 2px solid #00ff00;
-    border-bottom: 2px solid #00ff00;
-    color: rgb(0, 135, 0);
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding:10px;
+    margin-bottom: 2vw;
+}
+div.c3formula2 {
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding:10px;
     margin-bottom: 2vw;
 }
 /* Chapter 4*/
 div.c4heading{
     box-sizing: border-box;
-    padding-top: 5VW;
-    margin-top:-2vw
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
 div.c4text {
     background: linear-gradient(transparent 50%, orange);
@@ -381,15 +419,22 @@ div.c4img {
 div.center {
     margin-left:auto;
     margin-right:auto;
-}
+}                                                                                                                                                   
 
 div.marginbottom {
     margin-bottom: 50px;
 }
 
-span.word {
-    border:0.5rem outset blue;
+span.word 
+{
+    border:0.5rem solid transparent;
   }
+
+span.word:hover {
+    border:0.5rem solid blue;
+}
+
+
 
 div.hover:hover{
     filter: invert(100%);
